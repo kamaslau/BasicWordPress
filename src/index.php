@@ -26,6 +26,7 @@
 		<section class=content-entry><?php the_content('了解详情 &raquo;'); ?></section>
 	</article>
 	<?php endwhile; ?>
+	
 	<nav id=nav-content role=navigation>
 		<?php if(!is_singular()): ?>
 			<span class=nav-previous><?php posts_nav_link(' ',' ','<i class="fa fa-angle-double-left"></i>
@@ -39,11 +40,12 @@
 	', TRUE);?></span>
 		<?php endif; ?>
 	</nav>
-	<div id=wumiiDisplayDiv></div>
 	<?php endif; ?>
 </div>
+
 <?php
 	if(is_singular()||is_archive()):
 		get_sidebar();
 	endif;
+	
 	get_footer();

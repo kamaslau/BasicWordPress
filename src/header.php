@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes() ?>>
 <!--<![endif]-->
 <head>
-	<meta charset=<?php bloginfo('charset'); ?>>
+	<meta charset=<?php bloginfo('charset') ?>>
 	<meta http-equiv=x-dns-prefetch-control content=on>
 	<link rel=dns-prefetch href="https://cdn.liuyajie.com/">
 	<title><?php if(is_home()){bloginfo('name');echo ' - ';bloginfo('description');}else{wp_title('|',true,'right');bloginfo('name');echo ' - ';bloginfo('description');} ?></title>
-	<meta name=version content="revision2020018">
+	<meta name=version content="revision20201220">
 	<meta name=author content="刘亚杰">
 	<meta name=copyright content="刘亚杰">
 	<meta name=contact content="kamaslau@dingtalk.com">
@@ -27,7 +27,7 @@
 	<link rel="apple-touch-icon" href="http://images.key2all.com/logo/brand/3_120x120.png">
 	-->
 	
-	<link rel=canonical href="<?php bloginfo('url'); ?>">
+	<link rel=canonical href="<?php bloginfo('url') ?>">
 
 	<meta name=format-detection content="telephone=yes, address=no, email=no">
 	
@@ -61,5 +61,6 @@
 			</div>
 		</div>
 	</header>
-	<div id=maincontainer role=main>
+
+	<main id=maincontainer role=main>
 		 <div class=container>

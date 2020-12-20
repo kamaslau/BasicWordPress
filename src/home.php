@@ -10,6 +10,7 @@
 					<h4><a rel=bookmark title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 				</li>
 				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
 			</ul>
 		</li>
 		<li>
@@ -21,6 +22,7 @@
 					<h4><a rel=bookmark title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 				</li>
 				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
 			</ul>
 		</li>
 		<li>
@@ -32,6 +34,7 @@
 					<h4><a rel=bookmark title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 				</li>
 				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
 			</ul>
 		</li>
 	</ul>

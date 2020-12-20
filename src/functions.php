@@ -21,3 +21,4 @@
 	  if(is_admin()) wp_enqueue_style( 'open-sans');
 	}
 	add_action( 'init', 'wpdx_replace_open_sans' );
+	

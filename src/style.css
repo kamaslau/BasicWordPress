@@ -1,9 +1,8 @@
 @charset "utf-8";
-@viewport			{width:device-width;}
-@-webkit-viewport	{width:device-width;}
-@-moz-viewport      {width:device-width;}
-@-ms-viewport       {width:device-width;}
-@-o-viewport        {width:device-width;}
+
+@viewport {
+	width: device-width;
+}
 
 /*
 	Theme Name: Basic WordPress
@@ -11,66 +10,181 @@
 	Author: Kamas Lau（刘亚杰）
 	Author URI: https://www.liuyajie.com/
 	Description: Common WordPress theme to start with
-	Version: 0.1beta
+	Version: 0.1.0
+	Requires at least: 5.4
+	Tested up to: 5.6
+	Requires PHP: 7.4
 	License: GNU General Public License v2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	Tags: black, green, white, light, two-columns, three-columns, left-sidebar, responsive-layout, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, accessibility-ready
 	Text Domain: basic_wordpress
+	Tags: black, green, white, light, two-columns, three-columns, left-sidebar, responsive-layout, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, accessibility-ready
 
 	你好，我是刘亚杰。我从2010年5月开始使用WordPress做一些有趣的项目，它见证了我的成长。非常期待与你分享任何收获，希望你（和我一样）能够从WordPress中获得灵感与收获。
 */
 
-body{color:#333;font:14px/1.5 "华文黑体","Microsoft Yahei","SimHei",verdana,arial,sans-serif;}
-.container{width:95%;margin:0 auto;}
-a{color:#323232;}
-	a:active,a:hover{color:#4acab4;}
-img{max-width:100%;}
-	img.aligncenter{margin:0 auto;display:block;}
+html {font-size: 16px;}
 
-#header{padding:24px 0;box-shadow: 0 0 3px 1px rgba(107, 141, 139, 0.4);z-index:99;}
-	#logo{background:url(images/logo.png) no-repeat left center;width:189px;height:60px;margin:0 auto;display:block;text-indent:-9999em;}
-	#nav-header{overflow:hidden;margin-top:20px;}
-		#nav-header li{float:left;display:inline;width:25%;text-align:center;line-height:2;}
-			#nav-header li a{color:#929292;line-height:22px;}
-				#nav-header li a:hover,li.current-menu-item a,li.current_page_item a,li.current-cat a{color:#333;border-bottom:2px solid #929292;transition:all 0.3s ease 0s;}
+body {
+	color: #333;
+	font: 1rem/1.5 "PingFang SC", miui, system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+a {
+	color: #323232;
+}
+
+a:active,
+a:hover {
+	color: #4acab4;
+}
+
+img {
+	max-width: 100%;
+}
+
+img.aligncenter {
+	margin: 0 auto;
+	display: block;
+}
+
+#header {
+	padding: 24px 0;
+	box-shadow: 0 0 3px 1px rgba(107, 141, 139, 0.4);
+	z-index: 99;
+}
+
+#logo {
+	background: url(images/logo.png) no-repeat left center;
+	width: 189px;
+	height: 60px;
+	margin: 0 auto;
+	display: block;
+	text-indent: -9999em;
+}
+
+#nav-header {
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+#nav-header li {
+	float: left;
+	display: inline;
+	width: 25%;
+	text-align: center;
+	line-height: 2;
+}
+
+#nav-header li a {
+	color: #929292;
+	line-height: 22px;
+}
+
+#nav-header li a:hover,
+li.current-menu-item a,
+li.current_page_item a,
+li.current-cat a {
+	color: #333;
+	border-bottom: 2px solid #929292;
+	transition: all 0.3s ease 0s;
+}
 
 /* 首页样式 */
 
 /* 除首页外主内容区 */
-#maincontainer{}
-	#maincontainer .container{}
-	#content{}
-		a.more-link{}
-		article{}
-			.content-entry p{margin-bottom:1.5em;}
-	#nav-content{overflow:hidden;width:100%;}
-		#nav-content .nav-previous,#nav-content .nav-next{float:left;width:48%;}
-		#nav-content .nav-next{float:right;text-align:right;}
-		#nav-content span a{display:block;overflow:hidden;/*注意不要写在最后了*/white-space:nowrap;text-overflow:ellipsis;}
+#maincontainer {}
 
-#footer{}
-	#footer a{}
-		#footer a:hover{}
-	a#totop{color:#333;background-color:#fff;opacity:.65;text-align:center;width:50px;height:50px;margin-bottom:7px;position:fixed;right:10px;bottom:10px;z-index:99;overflow:hidden;transition:all 1s ease 0s;display:none;}
-		a#totop:hover{color:#fff;background-color:#333;}
+#maincontainer .container {}
 
-/* 宽度在768像素以上的设备 */
-@media only screen and (min-width:769px){
-	.container{width:768px;}
-	
+#content {}
+
+a.more-link {}
+
+article {}
+
+.content-entry p {
+	margin-bottom: 1.5em;
+}
+
+#nav-content {
+	overflow: hidden;
+	width: 100%;
+}
+
+#nav-content .nav-previous,
+#nav-content .nav-next {
+	float: left;
+	width: 48%;
+}
+
+#nav-content .nav-next {
+	float: right;
+	text-align: right;
+}
+
+#nav-content span a {
+	display: block;
+	overflow: hidden;
+	/*注意不要写在最后了*/
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#footer {}
+
+#footer a {}
+
+#footer a:hover {}
+
+a#totop {
+	color: #333;
+	background-color: #fff;
+	opacity: .65;
+	text-align: center;
+	width: 44px;
+	height: 44px;
+	margin-bottom: 10px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 99;
+	overflow: hidden;
+	transition: all 1s ease 0s;
+}
+
+a#totop:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+/* 宽度在750像素以上的设备 */
+@media only screen and (min-width:750px) {
+	.container {
+		width: 750px;
+	}
+
 	/* 首页样式 */
 }
-	
+
 /* 宽度在960像素以上的设备 */
-@media only screen and (min-width:961px){
-	.container{width:960px;}
-		
+@media only screen and (min-width:961px) {
+	.container {
+		width: 960px;
+	}
+
 	/* 首页样式 */
 }
 
 /* 宽度在1280像素以上的设备 */
-@media only screen and (min-width:1281px){
-	.container{width:1280px;}
+@media only screen and (min-width:1281px) {
+	.container {
+		width: 1280px;
+	}
 
 	/* 首页样式 */
 }
